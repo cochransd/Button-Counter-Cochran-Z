@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="steve_cochran.button_counter_cochran_z.MainActivity">
+
+    <Button
+        android:text="Subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="doSomething2"
+
+        android:id="@+id/button2"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="doSomething3"
+
+        android:id="@+id/button3"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_toEndOf="@+id/button2" />
+
+    <Button
+        android:text="ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="doSomething1"
+
+        android:layout_marginTop="76dp"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView2"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button2" />
+
+    <TextView
+        android:text="Counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="doSomething1"
+
+        android:id="@+id/textView2"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/radioButton2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="GAME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="doSomethingGAME"
+
+        android:id="@+id/button5"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="doSomethingR"
+
+        android:id="@+id/radioButton2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:checked="true"
+        android:duplicateParentState="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="doSomethingR"
+
+        android:id="@+id/radioButton3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:checked="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="doSomethingR"
+
+        android:id="@+id/radioButton4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:checked="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="doSomethingR"
+
+        android:id="@+id/radioButton5"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:checked="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="doSomethingR"
+
+        android:id="@+id/radioButton6"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        style="@android:style/Widget.Holo.CompoundButton.RadioButton"
+        android:checked="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:onClick="doSomethingR"
+
+        android:id="@+id/radioButton1"
+        style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/radioButton3"
+        android:layout_alignStart="@+id/radioButton3"
+        android:checked="true" />
+
+</RelativeLayout>
